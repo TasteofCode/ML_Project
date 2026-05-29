@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-xp-grayFace font-tahoma text-black select-none;
+  }
+}
+
+/* 2007 Windows XP Outset and Inset borders */
+.xp-outset {
+  border-top: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  box-shadow: 1px 1px 0px 0px #000000;
+  background-color: #ECE9D8;
+}
+
+.xp-inset {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.xp-button {
+  background-color: #ECE9D8;
+  border-top: 1.5px solid #FFFFFF;
+  border-left: 1.5px solid #FFFFFF;
+  border-right: 1.5px solid #808080;
+  border-bottom: 1.5px solid #808080;
+  cursor: pointer;
+}
+
+.xp-button:active {
+  border-top: 1.5px solid #808080;
+  border-left: 1.5px solid #808080;
+  border-right: 1.5px solid #FFFFFF;
+  border-bottom: 1.5px solid #FFFFFF;
+  padding-top: 1.5px;
+  padding-left: 1.5px;
+}
+
+/* XP blue header */
+.xp-title-bar {
+  background: linear-gradient(180deg, #0054E3 0%, #2272F2 8%, #0253E2 20%, #0045D8 45%, #0045D8 85%, #0834B7 95%, #00228F 100%);
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #00228F;
+}
+
+/* Grid paper background for canvas drawing area */
+.xp-grid-bg {
+  background-color: #FFFFFF;
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, #E8E5D8 1px, transparent 1px),
+    linear-gradient(to bottom, #E8E5D8 1px, transparent 1px);
+  border: 2px inset #808080;
+}
+
+/* Classic Windows XP status bar */
+.xp-status-bar {
+  border-top: 2px solid #808080;
+  background-color: #ECE9D8;
+}
+
+.xp-status-panel {
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  border-left: 1px solid #808080;
+  border-top: 1px solid #808080;
+  @apply px-2 py-0.5 text-xs;
+}
+
+/* Retro scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECE9D8;
+  border: 1px solid #808080;
+  box-shadow: inset 1px 1px 0px #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ECE9D8;
+  border: 1.5px solid #FFFFFF;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  box-shadow: 1px 1px 0px #000000;
+}
+
+::-webkit-scrollbar-thumb:active {
+  border: 1.5px solid #808080;
+  border-right-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
